@@ -343,8 +343,7 @@
                     <div class="group bg-card-bg p-6 rounded-xl border border-gray-700 hover:border-accent-purple/50 transition duration-300 cursor-pointer"
                         onclick="openModal('ProjectAlpha')">
                         <div class="h-40 bg-gray-700 rounded-lg mb-4 overflow-hidden flex items-center justify-center">
-                            <img src="./zap.png"
-                                class="h-full w-full object-cover object-top" alt="Project Image">
+                            <img src="./zap.png" class="h-full w-full object-cover object-top" alt="Project Image">
                         </div>
                         <h4 class="text-xl font-semibold mb-1 group-hover:text-accent-purple transition">
                             CMS & CRM Systems
@@ -354,8 +353,7 @@
                     <div class="group bg-card-bg p-6 rounded-xl border border-gray-700 hover:border-accent-purple/50 transition duration-300 cursor-pointer"
                         onclick="openModal('ProjectBeta')">
                         <div class="h-40 bg-gray-700 rounded-lg mb-4 flex items-center justify-center text-gray-400">
-                            <img src="./legal.png"
-                                class="h-full w-full object-cover object-top" alt="Project Image">
+                            <img src="./legal.png" class="h-full w-full object-cover object-top" alt="Project Image">
                         </div>
                         <h4 class="text-xl font-semibold mb-1 group-hover:text-accent-purple transition">Dynamic
                             E-commerce Site</h4>
@@ -364,8 +362,7 @@
                     <div class="group bg-card-bg p-6 rounded-xl border border-gray-700 hover:border-accent-purple/50 transition duration-300 cursor-pointer"
                         onclick="openModal('ProjectGamma')">
                         <div class="h-40 bg-gray-700 rounded-lg mb-4 flex items-center justify-center text-gray-400">
-                            <img src="./BrmCalculator.png"
-                                class="h-full w-full object-cover" alt="Project Image">
+                            <img src="./BrmCalculator.png" class="h-full w-full object-cover" alt="Project Image">
                         </div>
                         <h4 class="text-xl font-semibold mb-1 group-hover:text-accent-purple transition">Subscription
                             SAAS Products</h4>
@@ -374,8 +371,7 @@
                     <div class="group bg-card-bg p-6 rounded-xl border border-gray-700 hover:border-accent-purple/50 transition duration-300 cursor-pointer"
                         onclick="openModal('ProjectDelta')">
                         <div class="h-40 bg-gray-700 rounded-lg mb-4 flex items-center justify-center text-gray-400">
-                            <img src="./speeto.png"
-                                class="h-full w-full object-cover" alt="Project Image">
+                            <img src="./speeto.png" class="h-full w-full object-cover" alt="Project Image">
                         </div>
                         <h4 class="text-xl font-semibold mb-1 group-hover:text-accent-purple transition">Food Delivery
                             App Backend</h4>
@@ -384,16 +380,19 @@
                     <div class="group bg-card-bg p-6 rounded-xl border border-gray-700 hover:border-accent-purple/50 transition duration-300 cursor-pointer"
                         onclick="openModal('ProjectEpsilon')">
                         <div class="h-40 bg-gray-700 rounded-lg mb-4 flex items-center justify-center text-gray-400">
-                            <img src="./edenford.png" class="h-full w-full object-cover object-center" alt="Project Image">
+                            <img src="./edenford.png" class="h-full w-full object-cover object-center"
+                                alt="Project Image">
                         </div>
-                        <h4 class="text-xl font-semibold mb-1 group-hover:text-accent-purple transition">Real Estate CRM</h4>
-                        <p class="text-sm text-gray-400">Optimize queries, functionalities  and Update Laravel 5 to Laravel 9</p>
+                        <h4 class="text-xl font-semibold mb-1 group-hover:text-accent-purple transition">Real Estate CRM
+                        </h4>
+                        <p class="text-sm text-gray-400">Optimize queries, functionalities and Update Laravel 5 to
+                            Laravel 9</p>
                     </div>
                     <div class="group bg-card-bg p-6 rounded-xl border border-gray-700 hover:border-accent-purple/50 transition duration-300 cursor-pointer"
                         onclick="openModal('ProjectZeta')">
                         <div class="h-40 bg-gray-700 rounded-lg mb-4 flex items-center justify-center text-gray-400">
-                            <img src="./checkitout.png"
-                                class="h-full w-full object-cover object-center" alt="Project Image">
+                            <img src="./checkitout.png" class="h-full w-full object-cover object-center"
+                                alt="Project Image">
                         </div>
                         <h4 class="text-xl font-semibold mb-1 group-hover:text-accent-purple transition">Mobile
                             E-commerce Bidding System</h4>
@@ -479,8 +478,7 @@
 
     <div id="project-modal"
         class="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center modal opacity-0 pointer-events-none">
-        <div
-            class="bg-card-bg w-full max-w-3xl m-4 p-8 rounded-xl shadow-2xl relative transform transition-all duration-300 scale-95">
+        <div class="bg-card-bg w-full max-w-3xl m-4 p-12 rounded-xl shadow-2xl relative transform transition-all duration-300 scale-95">
 
             <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-accent-purple">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -489,24 +487,23 @@
                 </svg>
             </button>
 
+            <div class="mb-6 h-[400px] overflow-hidden rounded-lg">
+                <img id="modal-image" src="" alt="Project Image" class="w-full h-full object-cover">
+            </div>
             <h3 id="modal-title" class="text-3xl font-bold mb-4 text-accent-purple"></h3>
             <p id="modal-subheading" class="text-lg text-gray-400 mb-6"></p>
 
             <div id="modal-details" class="space-y-4 text-gray-300">
             </div>
-
-            <p class="text-sm text-gray-500 mt-8">Note: This is a static simulation. In a real-world scenario, you would
-                dynamically load data for each project using a framework like Vue.js or React, or by fetching content
-                from a database.</p>
         </div>
     </div>
 
     <script>
-        // Define your project data here (simplified from your CV)
         const projectsData = {
             'ProjectAlpha': {
                 title: 'CMS & CRM Systems',
                 tech: 'Laravel, API Development, MySql, JQuery',
+                image: './zap.png',
                 details: [
                     'Developed custom CMS and CRM systems tailored to specific business needs, focusing on modularity and scalability.',
                     'Integrated authentication APIs (Google/Facebook) for secure and seamless user access.',
@@ -516,6 +513,7 @@
             'ProjectBeta': {
                 title: 'Dynamic E-commerce Site',
                 tech: 'Laravel, Vue.js, HTML5, CSS3, Relational Databases',
+                image: './legal.png',
                 details: [
                     'Developed a custom Laravel-based e-commerce site with dynamic product handling and inventory management.',
                     'Designed and optimized relational databases to ensure efficient storage and fast retrieval of client data.',
@@ -525,6 +523,7 @@
             'ProjectGamma': {
                 title: 'Subscription SaaS Automation',
                 tech: 'SaaS Architecture, Laravel, Payment Gateways (SOAP)',
+                image: './BrmCalculator.png',
                 details: [
                     'Built a full subscription-based SaaS application designed to automate complex business metric calculations.',
                     'Implemented third-party APIs for billing and payment gateway integration using SOAP.'
@@ -532,26 +531,31 @@
             },
             'ProjectDelta': {
                 title: 'Food Delivery App Backend',
-                tech: 'RESTful APIs, Twilio SMS API, Laravel',
+                tech: 'API Development, Twilio SMS API Integration',
+                image: './speeto.png',
                 details: [
-                    'Developed the robust backend and APIs for a Food Delivery Mobile App.',
-                    'Integrated Twilio SMS API for user verification and status updates, enhancing communication reliability.'
+                    'Developed the backend API for a high-traffic food delivery mobile application.',
+                    'Integrated Twilio for real-time SMS notifications for order updates.',
+                    'Designed scalable database schema for handling vendor, rider, and customer data.'
                 ]
             },
             'ProjectEpsilon': {
-                title: 'Legacy System Migration (L6 to L9)',
-                tech: 'Laravel, System Architecture, Performance Optimization',
+                title: 'Real Estate CRM Upgrade',
+                tech: 'Laravel 5 to 9 Upgrade, Query Optimization',
+                image: './edenford.png',
                 details: [
-                    'Successfully led the upgrade of a legacy system from Laravel 6 to Laravel 9.',
-                    'The migration resulted in a boost to overall security and a significant improvement in system performance (up to 32%).'
+                    'Successfully upgraded a legacy Real Estate CRM system from Laravel 5 to Laravel 9, boosting security and performance.',
+                    'Performed extensive database and ORM query optimization, significantly reducing page load times.'
                 ]
             },
             'ProjectZeta': {
                 title: 'Mobile E-commerce Bidding System',
-                tech: 'Mobile APIs, Custom Logic, Authentication',
+                tech: 'Mobile API, Custom Bidding Logic, Payment Integration',
+                image: './checkitout.png',
                 details: [
-                    'Created a custom bidding system for an E-commerce Mobile App, managing complex auction logic.',
-                    'Implemented core user interactions such as the "like" button functionality.'
+                    'Designed and developed the API for a mobile e-commerce platform featuring a custom bidding and auction system.',
+                    'Integrated multiple payment gateways and secure user authentication methods.',
+                    'Engineered the bidding logic to handle simultaneous, real-time bid placements.'
                 ]
             }
         };
@@ -560,34 +564,65 @@
         const modalTitle = document.getElementById('modal-title');
         const modalSubheading = document.getElementById('modal-subheading');
         const modalDetails = document.getElementById('modal-details');
+        const modalImage = document.getElementById('modal-image');
 
         function openModal(projectId) {
             const project = projectsData[projectId];
-            if (!project) return;
 
-            // 1. Update Content
+            if (!project) {
+                console.error('Project data not found for ID:', projectId);
+                return;
+            }
+
+            // Populate modal content
             modalTitle.textContent = project.title;
             modalSubheading.textContent = project.tech;
+            modalImage.src = project.image;
+            modalImage.alt = project.title;
 
+            // Clear previous details and add new ones
             modalDetails.innerHTML = '';
             project.details.forEach(detail => {
-                const li = document.createElement('li');
-                li.className = 'list-disc list-inside ml-4 text-base';
-                li.textContent = detail.replace(/\/g, '');
-                modalDetails.appendChild(li);
+                const p = document.createElement('p');
+                p.className = 'flex items-start';
+                p.innerHTML = `<svg class="w-5 h-5 mr-3 mt-1 text-accent-purple flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.857a.75.75 0 00-1.214-.858L9 11.143l-1.643-1.643a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.06 0l4.5-4.5a.75.75 0 00.04-1.04z" clip-rule="evenodd"></path></svg>${detail}`;
+                modalDetails.appendChild(p);
             });
 
-            // 2. Show Modal (CSS Transition)
+            // Show the modal with transition effect
             modal.classList.remove('opacity-0', 'pointer-events-none');
-            modal.querySelector('div').classList.remove('scale-95');
-            modal.querySelector('div').classList.add('scale-100');
+            modal.querySelector('div:last-child').classList.remove('scale-95'); // Target the inner modal content for scaling effect
+            modal.querySelector('div:last-child').classList.add('scale-100');
         }
 
         function closeModal() {
-            // 1. Hide Modal (CSS Transition)
+            // Hide the modal with transition effect
             modal.classList.add('opacity-0', 'pointer-events-none');
-            modal.querySelector('div').classList.remove('scale-100');
-            modal.querySelector('div').classList.add('scale-95');
+            modal.querySelector('div:last-child').classList.remove('scale-100');
+            modal.querySelector('div:last-child').classList.add('scale-95');
+        }
+
+        // Optional: Close modal when clicking outside of it
+        modal.addEventListener('click', (e) => {
+            if (e.target.id === 'project-modal') {
+                closeModal();
+            }
+        });
+
+        // Make sure the Tailwind config is still at the top
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'accent-purple': '#9333ea', /* Vibrant purple */
+                        'dark-charcoal': '#121216', /* Very dark background */
+                        'card-bg': '#1e1e24',      /* Slightly lighter background for card and inner elements */
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
         }
     </script>
 </body>
