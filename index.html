@@ -437,29 +437,26 @@
             <section id="contact">
                 <h3 class="text-4xl font-bold mb-12 uppercase border-l-4 border-accent-purple pl-4">Get In Touch</h3>
 
-                <form class="max-w-xl space-y-6">
+                <form action="https://formspree.io/f/myzbrnyl" method="POST" class="max-w-xl space-y-6">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <input type="text" placeholder="Name"
+                        <input type="text" name="name" placeholder="Name"
                             class="w-full p-3 rounded-lg bg-card-bg border-2 border-gray-700 focus:ring-1 focus:ring-accent-purple focus:border-accent-purple outline-none transition"
                             required>
-                        <input type="email" placeholder="Email"
+                        <input type="email" name="email" placeholder="Email"
                             class="w-full p-3 rounded-lg bg-card-bg border-2 border-gray-700 focus:ring-1 focus:ring-accent-purple focus:border-accent-purple outline-none transition"
                             required>
                     </div>
-
-                    <select class="w-full p-3 rounded-lg bg-card-bg border-2 border-gray-700 focus:ring-1 focus:ring-accent-purple focus:border-accent-purple outline-none text-gray-400 transition">
+                    <select name="reason"
+                        class="w-full p-3 rounded-lg bg-card-bg border-2 border-gray-700 focus:ring-1 focus:ring-accent-purple focus:border-accent-purple outline-none text-gray-400 transition">
                         <option value="">Reason</option>
-                        <option value="hire_project">Hire for a Project</option>
-                        <option value="freelance_inquiry">Freelance / Collaboration Inquiry</option>
-                        <option value="website_help">Need Help with Website / App</option>
-                        <option value="say_hi">Just Want to Say Hi 👋</option>
+                        <option value="hire project">Hire for a Project</option>
+                        <option value="freelance inquiry">Freelance / Collaboration Inquiry</option>
+                        <option value="website help">Need Help with Website / App</option>
+                        <option value="say hi">Just Want to Say Hi 👋</option>
                     </select>
-
-
-                    <textarea placeholder="Tell me about your project..." rows="5"
+                    <textarea name="message" placeholder="Tell me about your project..." rows="5"
                         class="w-full p-3 rounded-lg bg-card-bg border-2 border-gray-700 focus:ring-1 focus:ring-accent-purple focus:border-accent-purple outline-none transition"
                         required></textarea>
-
                     <button type="submit"
                         class="w-full bg-accent-purple hover:bg-purple-700 text-white font-bold py-3 rounded-lg transition shadow-xl shadow-accent-purple/30 text-lg">
                         Send Message
